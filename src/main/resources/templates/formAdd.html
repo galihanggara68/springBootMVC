@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form Add Employee</title>
+</head>
+<body>
+	<form method="post" th:action="@{/employee/add}" th:object="${employee}">
+		<input type="number" th:field="*{employeeId}" />
+		<input type="text" th:field="*{firstName}" />
+		<input type="text" th:field="*{lastName}" />
+		<input type="submit" value="Add" />
+	</form>
+</body>
+</html>
